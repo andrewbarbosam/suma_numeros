@@ -4,12 +4,12 @@ package org.example;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        Manager manager = Manager();
+
+        Manager manager = new Manager();
         manager.addNumero(1);
         manager.addNumero(2);
         manager.addNumero(3);
         manager.addNumero(4);
-
+     System.out.println("la suma es" + manager.getSuma());
     }
 }

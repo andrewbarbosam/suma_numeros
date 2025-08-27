@@ -3,7 +3,7 @@ import java.util.List;
 import java.util.ArrayList;
 
 public class Manager {
-    private List<Integer>numeros;
+    private final List<Integer> numeros;
 
     public Manager(){
 
@@ -12,5 +12,14 @@ public class Manager {
 
     public void addNumero(int numero){
         this.numeros.add(numero);
+    }
+
+
+    public int getSuma() {
+        int total = 0;
+        for (Integer numero : this.numeros) {
+            total += numero;
+        }
+        return total;
     }
 }
