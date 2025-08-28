@@ -16,10 +16,6 @@ public class Manager {
 
 
     public int getSuma() {
-        int total = 0;
-        for (Integer numero : this.numeros) {
-            total += numero;
-        }
-        return total;
-    }
+      return this.numeros.stream().mapToInt(Integer::intValue).sum();
+
 }
